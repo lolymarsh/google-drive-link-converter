@@ -1,0 +1,34 @@
+{{ define "index_page" }}
+<main>
+  <div class="container mt-5">
+    <h1 class="mb-4">Google Drive Link Converter</h1>
+    <form id="linkForm">
+      <div class="mb-3">
+        <label for="inputLink" class="form-label">Google Drive Link:</label>
+        <input type="url" class="form-control" id="inputLink" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Convert</button>
+    </form>
+    <div class="mt-4">
+      <label for="directDownloadLink" class="form-label"
+        >Direct Download Link:</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="directDownloadLink"
+        readonly
+      />
+    </div>
+    <div class="mt-4">
+      <label for="embedLink" class="form-label">Embed Link:</label>
+      <input type="text" class="form-control" id="embedLink" readonly />
+    </div>
+    <div class="mt-4">
+      <label for="renderLink" class="form-label">Render Link:</label>
+      <input type="text" class="form-control" id="renderLink" readonly />
+    </div>
+  </div>
+</main>
+<script src="/assets/js/index_page/index.js"></script>
+{{ end }}

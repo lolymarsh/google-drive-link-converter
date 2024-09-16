@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.title_page}}</title>
+    <link rel="icon" href="{{.favicon_page}}" type="image/x-icon" />
+    {{template "partials/commonCSS" .}} {{template "partials/commonJS" .}}
+  </head>
+
+  <body>
+    {{template "components/navbar" .}} {{embed}} {{template "components/footer"
+    .}}
+  </body>
+</html>
